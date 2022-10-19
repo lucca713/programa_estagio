@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html id="teste" lang="pt">
+<head>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--CSS DO BOOTSTRAP-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pesquisador de livro</title>
+	<link rel="icon" href="img/lendo-um-livro.svg">
+</head>
+<body>
+
+
+	<!--COMEÇO DA NAVBAR-->
+	<nav class="navbar navbar-expand-lg navbar-light  nav_transparente">
+			  <a class="navbar-brand" href="index.html">Livros</a>
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+							    <span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					    <div class="navbar-nav">
+					      <a class="nav-item nav-link active" href="Sobre.html">Sobre Mim</a>
+					  
+					    </div>
+					  </div>
+</nav>
+	
+	
+	<!--fIM DA NAVBAR-->
+
+	 <!-- aqui onde fica a imagem logo do site -->
+
+   <div class="container">
+		 <div class="row">
+		 	<img src="img\lendo-um-livro.svg" class="rounded mx-auto d-block tamanho_logo col-md-12 col-sm-12" alt="logo">
+		 </div>
+   </div>
+
+
+	 <!-- botao de pesquisar os livros -->
+	<!--botao com onclick para pesquisar -->
+		<div class="caixa_de_pesquisa">
+				<input id="input-books" type="text"  class="inserir_texto " placeholder="Pesquise um Livro">
+				<button onclick="eventoChange()" id="button-books" type="button" class="botao_de_pesquisa" ><img src="img\icone_pesquisa.svg" alt="Lupa" class="tamanho"></button>
+		</div>
+
+	
+	<!--CONTEÚDO (onde vai aparecer os livros)-->
+
+	<section  id="servicos">
+			<div class="container div_branca ">
+			<div id="div-books" class="row">
+			</div>
+	</section>
+		
+
+<!--AXIOS-->
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>	
+
+	
+<!-- AQUI ESTA MEU JAVASCRIPT -->
+<script language="javascript" src="meu_javascript.js"></script>	
+
+	
+
+
+
+ <!-- AQUI ONDE ESTA CONFIGURADO A RESPONSIVIDADE DO SITE PELO BOOTSTRAP --> 
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+ 
+</body>
+</html>

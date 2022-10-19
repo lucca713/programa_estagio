@@ -1,0 +1,131 @@
+/*CSS DE CLASSES PRINCIPAIS DO HTML*/
+li{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+H1{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%); /*aqui para deixar a barra de pesquisa no meio*/ 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	
+}
+
+.tamanho{
+	height: 25px;
+	width: 25px;
+}
+
+body{
+	margin: 0;
+	height: 100vh;
+	background-color: background: #c6edff; background: -moz-linear-gradient(to right,  #c6edff 0%,#a3c6ff 100%); background: -webkit-linear-gradient(to right,  #c6edff 0%,#a3c6ff 100%); background: linear-gradient(to right,  #c6edff 0%,#a3c6ff 100%);
+
+}
+ /*CONFIGURAÇÕES DE PERSONALIZAÇÃO DA BARRA DE PESQUIS DOS LIVROS*/ 
+
+
+
+
+
+.caixa_de_pesquisa{
+	position: absolute;
+	top: 68%;
+	left: 50%;
+	transform: translate(-50%,-50%); /*aqui para deixar a barra de pesquisa no meio*/ 
+	background: #0a1b2d;
+	height: 65px;
+	padding: 15px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+
+}
+/*deixar o input trasparente*/
+.inserir_texto{
+border: none;
+background: none;
+outline: none;
+padding: 0;
+color:#f0f5fb ;
+font-size: 16px;
+line-height: 40px;
+width: 0;
+transition: 0.5s;
+
+
+}
+
+
+
+.botao_de_pesquisa{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background:#0a1b2d ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+
+}
+
+/*aqui vai fazer a ação de ampliar a barra de pesquisa*/
+
+.caixa_de_pesquisa:hover > .inserir_texto{
+	width: 240px;
+	padding: 0 6px;
+
+}
+
+.caixa_de_pesquisa:hover > .botao_de_pesquisa{
+	background: #d3d3d3;
+
+}
+
+/*FIM DA PESONALIZAÇÃO DA BARRA DE PESQUISA*/
+
+/*PERSONALIZAÇÃO DO ICONE DO SITE*/
+
+.tamanho_logo{
+	 
+	height: 300px;
+	width: 253px;
+
+}
+
+/*CONFIGURAÇÕES DA NAVBAR (opacidade)*/
+
+.nav_transparente{
+
+	background: rgba(0,0,225, 0.1);
+}
+
+
+/*SEEÇÃO SERVIÇOS*/
+
+#servicos{
+	background: white;
+	top:75%;
+	bottom: 100%;
+	position: absolute;
+	width: 100%;
+	
+}
+
+.div_branca{
+	background: white;
+}
+
+
+
+
+
+
